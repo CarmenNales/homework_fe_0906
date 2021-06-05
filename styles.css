@@ -34,7 +34,6 @@ body {
     grid-template-areas: "a" "b" "c" "d" "e" "." "f";
     column-gap: 16px;
     row-gap: 16px;
-
 }
 
 #a, #b, #c, #d, #e, #f {
