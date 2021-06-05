@@ -1,1 +1,84 @@
 /*Maak hier jouw CSS!*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-color: #FFF;
+    --background-color: #D2D0D3;
+    --padding-color: #BDB4BF;
+    --border-color: #BC8DA7;
+    --a-color: #BC8DA7;
+    --b-color: #BDABB9;
+    --c-color: #BDABB9;
+    --d-color: #BDABB9;
+    --e-color: #BDABB9;
+    --f-color: #BC8DA7;
+
+}
+
+body {
+    color: var(--font-color);
+    font-family: Verdana, sans-serif;
+    background: var(--background-color);
+}
+
+.container {
+    background: var(--padding-color);
+    padding: 16px;
+    display: grid;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "a" "b" "c" "d" "e" "." "f";
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+#a, #b, #c, #d, #e, #f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 3px solid var(--border-color);
+    border-radius: 10px;
+}
+
+#a {
+    background: var(--a-color);
+    grid-area: a;
+}
+
+#b {
+    background: var(--b-color);
+    grid-area: b;
+}
+
+#c {
+    background: var(--c-color);
+    grid-area: c;
+}
+
+#d {
+    background: var(--d-color);
+    grid-area: d;
+}
+
+#e {
+    background: var(--e-color);
+    grid-area: e;
+}
+
+#f {
+    background: var(--f-color);
+    grid-area: f;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        grid-template-rows: 50px 190px 100px auto 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "a c c" "b c c" "b e d" "b e ." "f f f";
+    }
+}
