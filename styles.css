@@ -8,14 +8,9 @@
 :root {
     --font-color: #FFF;
     --background-color: #D2D0D3;
+    --background-grid-color: #BDABB9;
     --padding-color: #BDB4BF;
-    --border-color: #BC8DA7;
-    --a-color: #BC8DA7;
-    --b-color: #BDABB9;
-    --c-color: #BDABB9;
-    --d-color: #BDABB9;
-    --e-color: #BDABB9;
-    --f-color: #BC8DA7;
+    --header-color: #BC8DA7;
 
 }
 
@@ -34,7 +29,6 @@ body {
     grid-template-areas: "a" "b" "c" "d" "e" "." "f";
     column-gap: 16px;
     row-gap: 16px;
-
 }
 
 #a, #b, #c, #d, #e, #f {
@@ -42,37 +36,37 @@ body {
     justify-content: center;
     align-items: center;
     padding: 16px;
-    border: 3px solid var(--border-color);
+    border: 3px solid var(--header-color);
     border-radius: 10px;
 }
 
 #a {
-    background: var(--a-color);
+    background: var(--header-color);
     grid-area: a;
 }
 
 #b {
-    background: var(--b-color);
+    background: var(--background-grid-color);
     grid-area: b;
 }
 
 #c {
-    background: var(--c-color);
+    background: var(--background-grid-color);
     grid-area: c;
 }
 
 #d {
-    background: var(--d-color);
+    background: var(--background-grid-color);
     grid-area: d;
 }
 
 #e {
-    background: var(--e-color);
+    background: var(--background-grid-color);
     grid-area: e;
 }
 
 #f {
-    background: var(--f-color);
+    background: var(--header-color);
     grid-area: f;
 }
 
